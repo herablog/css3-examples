@@ -1,0 +1,11 @@
+{
+	"name": "hara-css3-examples",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "*",
+		"optimist": "*",
+		"jade": "*",
+		"stylus": "",
+		"nib": "*"
+	}
+}
