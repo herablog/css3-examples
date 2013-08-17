@@ -2,13 +2,13 @@
 html
 	head
 		block title
-			h1 #{number}
-		link(rel="stylesheet", src="/css/main.css")
-		link(rel="stylesheet", src="/css/#{number}.css")
+			title #{number} | CSS3 Recipe Book
 		block css
+			link(rel="stylesheet", href="/css/main.css")
+			link(rel="stylesheet", href="/css/#{number}.css")
 
 	body
 		div#main
 			block content
-		script(src="/js/lib/jquery-1.10.2.min.js")
-		block script
+		block scripts
+			script(src="/js/lib/jquery-1.10.2.min.js")
