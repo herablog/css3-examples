@@ -1,0 +1,84 @@
+@import 'nib'
+
+.pagination
+    display -webkit-box
+    font-family poiret-one, sans-serif
+    margin 80px auto
+    width 80%
+
+
+/* item */
+.pagination-item
+    -webkit-box-flex 1
+    text-align center
+
+
+.pagination-item a
+    background #6cf
+    border-radius 50%
+    color #fff
+    display inline-block
+    height 2em
+    line-height 2
+    padding 2px
+    text-decoration none
+    -webkit-transition all .2s
+    min-width 2em
+
+
+/* selected */
+.pagination-item.selected a
+    background #33f
+
+
+/* :hover */
+.pagination-item:not(.selected) a:hover
+    -webkit-transform scale(1.3)
+
+
+/* previous, next */
+.pagination-item-prev,
+.pagination-item-next
+    -webkit-box-flex .5
+    font-weight bold
+    height 2em
+    line-height 2
+    text-decoration none
+
+
+.pagination-item-previous
+    text-align left
+
+
+.pagination-item-next
+    text-align right
+
+
+.pagination-item-prev a,
+.pagination-item-next a
+    color #6cf
+    text-decoration none
+    -webkit-transition all .2s
+
+
+/* :hover */
+.pagination-item-prev a:hover,
+.pagination-item-next a:hover
+    color #33f
+
+
+/* insert text */
+.pagination-item-prev a:before
+    content '<<'
+    padding 0 .3em 0 0
+
+
+.pagination-item-next a:after
+    content '>>'
+    padding 0 0 0 .3em
+
+
+/* continue text */
+.pagination-item-continue
+    height 2em
+    line-height 2
