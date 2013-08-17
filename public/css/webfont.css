@@ -1,0 +1,159 @@
+#main {
+  font-family: sans-serif;
+}
+/* common styles */
+.header {
+  border: 1px solid #eee;
+  margin: 20px auto;
+  min-height: 200px;
+  overflow: hidden;
+  width: 640px;
+}
+/* type 1 */
+.type1 {
+  background-color: rgba(166,217,255,0.4);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+}
+/* type1 background image */
+.type1::before {
+  background: rgba(102,204,153,0.4);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  content: '';
+  display: block;
+  left: 16%;
+  height: 80px;
+  position: absolute;
+  top: 30%;
+  width: 80px;
+  z-index: -1;
+}
+/* type1 logo */
+.type1 .logo {
+  left: 55%;
+  font-family: lancelot, serif;
+  font-size: 5em;
+  margin: -0.5em 0 0 30px;
+  position: absolute;
+  top: 40%;
+}
+.type1 .logo::before {
+  background: rgba(255,204,204,0.5);
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+  content: '';
+  display: block;
+  right: 11%;
+  height: 90px;
+  position: absolute;
+  top: 36%;
+  width: 90px;
+  z-index: -1;
+}
+/* type1 paragraph */
+.type1 p {
+  font-family: 'Fauna One', serif;
+  margin: 0 0 1em;
+  width: 60%;
+}
+.type1 p:last-child {
+  margin-bottom: 0;
+}
+.type1 em {
+  color: #f63;
+}
+.type1 b {
+  color: #03f;
+}
+/* type2 */
+.type2 {
+  background-color: #0c6;
+  background-image: -webkit-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -moz-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -o-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -ms-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -webkit--webkit-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -webkit--moz-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -webkit--o-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -webkit--ms-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+  background-image: -webkit-radial-gradient(rgba(255,255,255,0.25), rgba(0,153,102,0.1));
+}
+.type2 .logo {
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(top, #fc3 60%, #f90);
+  background-image: -moz-linear-gradient(top, #fc3 60%, #f90);
+  background-image: -o-linear-gradient(top, #fc3 60%, #f90);
+  background-image: -ms-linear-gradient(top, #fc3 60%, #f90);
+  background-image: linear-gradient(to bottom, #fc3 60%, #f90);
+  color: #fc3;
+  font-family: ultra, serif;
+  font-size: 4em;
+  margin: 1em 0;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  prop: transparent;
+}
+/* type3 */
+.type3 {
+  background-color: #fc6;
+  position: relative;
+}
+/* type3 line */
+.type3 .line {
+  background: rgba(255,102,51,0.45);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  display: box;
+  font-family: poiret-one, sans-serif;
+  font-size: 3em;
+  height: 2em;
+  left: 0;
+  margin: -1em 0 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.type3 .line p {
+  padding: 0.5em 0;
+  text-align: center;
+  width: 50%;
+}
+/* type3 circle */
+.type3 .circle {
+  background: #f33;
+  border: 5px solid #fff;
+  -webkit-border-radius: 3.5em;
+  border-radius: 3.5em;
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  font-family: paytone-one, sans-serif;
+  font-size: 1.5em;
+  height: 7em;
+  left: 50%;
+  line-height: 6.5;
+  margin: -3.5em 0 0 -3.5em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 7em;
+}

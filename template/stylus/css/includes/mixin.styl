@@ -1,0 +1,20 @@
+vendor2(prop,val)
+	-webkit-{prop} val
+	-moz-{prop} val
+	-o-{prop} val
+	-ms-{prop} val
+	prop val
+
+text-fill-color(val)
+	vendor2(text-fill-color, val)
+	
+flexbox()
+	display -webkit-box
+	display -moz-box
+	display -o-box
+	display -ms-box
+	display box
+
+box-flex(val)
+	vendor2(box-flex, val)
+	

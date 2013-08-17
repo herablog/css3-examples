@@ -1,0 +1,93 @@
+#main {
+  font-family: sans-serif;
+}
+.box {
+  border: 1px solid #ccc;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+}
+.title {
+  font-size: 5em;
+  position: absolute;
+  line-height: 1;
+  margin-top: -0.5em;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.box1 {
+  background-color: #3b3b3b;
+}
+.box1 .title {
+  color: #222;
+  font-family: "league-gothic", sans-serif;
+  text-shadow: 0 1px 1px #4d4d4d;
+}
+.box2 {
+  background-color: #2c2c2c;
+}
+.box2 .title {
+  color: #444;
+  font-family: maven-pro, sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6), -1px -1px 1px rgba(255,255,255,0.4);
+}
+.box3 {
+  background-color: #333;
+}
+.box3 .title {
+  color: rgba(84,84,84,0.2);
+  font-family: gentium-basic, serif;
+  font-size: 3.2em;
+  text-shadow: 0 0 20px rgba(84,84,84,0.6), 0 0 10px rgba(84,84,84,0.6);
+}
+.box4 {
+  background-color: #6cf;
+  background-image: -webkit-linear-gradient(#6cf 0, #cff 100%);
+  background-image: -moz-linear-gradient(#6cf 0, #cff 100%);
+  background-image: -o-linear-gradient(#6cf 0, #cff 100%);
+  background-image: -ms-linear-gradient(#6cf 0, #cff 100%);
+  background-image: linear-gradient(#6cf 0, #cff 100%);
+}
+.box4 .title {
+  color: rgba(255,255,255,0);
+  font-family: 'chango', sans-serif;
+  font-size: 4em;
+  text-shadow: 0 0 10px rgba(255,255,255,0.7), 0 0 30px rgba(255,255,255,0.5), 0 0 50px rgba(255,255,255,0.4), 0 0 200px rgba(255,255,255,0.3);
+}
+.box5 {
+  background: #f30;
+}
+.box5 .title {
+  color: #fff;
+  font-family: 'Freckle Face', cursive;
+  font-weight: bold;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #f80, 0 -18px 40px #f00;
+}
+.box6 {
+  background-color: #000;
+  background-image: -webkit-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--webkit-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: -moz-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--moz-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: -o-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--o-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: -ms-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--ms-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+}
+.box6 .title {
+  color: #fff;
+  font-family: pt-sans-narrow, sans-serif;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+}
+.box7 {
+  background-color: #f6f;
+}
+.box7 .title {
+  color: #f3c;
+  font-family: Varela, sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 0 0 60px rgba(255,255,255,0.8), 0 0 30px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.8);
+}

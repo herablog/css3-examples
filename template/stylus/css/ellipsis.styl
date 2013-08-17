@@ -1,0 +1,79 @@
+@import 'includes/examples'
+
+/* album */
+.album {
+    background: #fffff2;
+    color: #360000;
+}
+
+.album-heading {
+    background: rgba(54,0,0,.7);
+    color: #fff;
+    padding: 3px 2px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.album-list {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 45px 0 20px;
+    width: 90%;
+}
+
+.album-item {
+    float: left;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+
+.album-item a {
+    color: #360000;
+    display: block;
+    text-decoration: none;
+}
+
+.album-item a:hover {
+    opacity: .8;
+}
+
+.album-thumbnail {
+    border: 5px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    box-sizing: border-box;
+    height: 120px;
+    width: 120px;
+}
+
+.album-title {
+    font-size: .8em;
+    overflow: hidden;
+    text-indent: .5em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+}
+
+/* tooltip */
+.album-tooltip {
+    background: rgba(255,255,242,.8);
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    color: #270000;
+    display: none;
+    font-size: .6em;
+    left: 35px;
+    padding: 5px;
+    position: absolute;
+    top: 25px;
+    width: 100px;
+}
+
+/* show tooltop */
+.album-item a:hover .album-tooltip {
+    display: block;
+}

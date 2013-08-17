@@ -1,0 +1,41 @@
+extends ../includes/base
+
+block append css
+	<!-- load font -->
+	<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+
+block content
+	<ul class="list">
+
+	<!-- heading list -->
+	<li class="list-item list-main">Settings</li>
+
+	<!-- link list -->
+	<li class="list-wrap"><a href="#" class="list-link list-item list-arrow list-main">Wi-Fi Settings</a></li>
+
+	<!-- status list -->
+	<li class="list-link list-item">
+	<div class="list-main">
+	<p class="list-item-title">Wi-Fi</p>
+	</div>
+	<div class="list-value">ON</div>
+	</li>
+
+	<!-- link list with icon -->
+	<li class="list-wrap"><a href="#" class="list-link list-item list-arrow">
+	<div class="list-image fontawesome-camera"></div>
+	<div class="list-main">Camera</div>
+	</a></li>
+
+	<!-- detail list -->
+	<li class="list-wrap"><a href="#" class="list-link list-item list-arrow">
+	<div class="list-image"><img src="http://hara-css3.herokuapp.com/img/icon_bookmark.png" alt="bookmark" class="list-image-thumb"></div>
+	<div class="list-main">
+	<p class="list-item-title">Bookmark App.</p>
+	<p class="list-subtext">Let's bookmark websites you like.</p>
+	</div>
+	<div class="list-value">Free</div>
+	</a></li>
+	</ul>
+
+block append scripts

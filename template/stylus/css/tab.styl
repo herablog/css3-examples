@@ -1,0 +1,91 @@
+@import 'includes/examples'
+
+/* contents */
+#contents {
+    color: #333;
+    counter-reset: num;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* navi default style */
+input[name="tab"] {
+    appearance: none;
+    border: 1px solid #39f;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8em;
+    padding: 2px 4px;
+    text-align: center;
+    width: 30%;
+}
+
+input[name="tab"]:checked {
+    background: #39f;
+    color: #fff;
+}
+
+/* insert text */
+input[name="tab"]::after {
+    content: attr(title);
+}
+
+/* checked style */
+input[name="tab"][value="0"]:checked ~ #main1,
+input[name="tab"][value="1"]:checked ~ #main2,
+input[name="tab"][value="2"]:checked ~ #main3 {
+    display: block;
+}
+
+/* contents area */
+.main {
+    border-top: 1px solid #eee;
+    display: none;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+/* list */
+.item {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.item::before {
+    content: counter(num);
+    counter-increment: num;
+    left: 10px;
+    position: absolute;
+    top: 30px;
+}
+
+.item a {
+    color: #333;
+    display: block;
+    overflow: hidden;
+    padding: 10px 35px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    background: #f8f8f8;
+}
+
+.item-thumbnail {
+    background: #efefef;
+    border-radius: 4px;
+    float: left;
+    height: 60px;
+    margin: 0 15px 0 0;
+    width: 60px;
+}
+
+.item-title {
+    padding: 2px 0;
+}
+
+.item-description {
+    color: #999;
+    font-size: .8em;
+}

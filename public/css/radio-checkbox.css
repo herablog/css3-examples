@@ -1,0 +1,86 @@
+#main {
+  font-family: sans-serif;
+}
+#main {
+  background: #f7f7f7;
+  padding: 10px 0;
+}
+fieldset {
+  background: #fff;
+  border: solid 1px #ddd;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+  color: #333;
+  font-family: sans-serif;
+  padding: 40px 0 0;
+  position: relative;
+  margin: 20px 10px;
+}
+legend {
+  font-weight: bold;
+  height: 40px;
+  left: 5px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+}
+.item {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* ラジオボタン・チェックボックをオリジナルに */
+input[type="radio"],
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  margin: 0;
+  width: 100%;
+}
+/* アイテム名 */
+input[type="radio"] + .text,
+input[type="checkbox"] + .text {
+  display: inline-block;
+  left: 10px;
+  line-height: 40px;
+  position: absolute;
+}
+/* hover時のスタイル */
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  background: #eee;
+}
+/* 選択中のスタイル */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background: #bbb;
+}
+/* 選択中のアイテム名 */
+input[type="radio"]:checked + .text,
+input[type="checkbox"]:checked + .text {
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+/* 無効時のスタイル */
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled {
+  cursor: default;
+}
+input[type="radio"]:disabled + .text,
+input[type="checkbox"]:disabled + .text {
+  text-decoration: line-through;
+}
+input[type="radio"]:disabled:hover,
+input[type="checkbox"]:disabled:hover {
+  background: #fff;
+}
