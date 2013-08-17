@@ -1,0 +1,47 @@
+@import 'includes/examples'
+
+.breadcrumb {
+    flexbox()
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* item */
+.breadcrumb-item {
+    margin: 0 1.3em 0 0;
+    position: relative;
+}
+
+.breadcrumb-item a {
+    color: #333;
+    display: inline-block;
+    height: 2em;
+    line-height: 2;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+/* trignal */
+.breadcrumb-item a::before {
+    background: #f3f;
+    border-radius: 50%;
+    color: #fff;
+    content: '>';
+    display: block;
+    height: 1.3em;
+    line-height: 1.3;
+    margin: -.7em 0 0;
+    position: absolute;
+    right: -1em;
+    text-align: center;
+    top: 50%;
+    transform: scale(.8);
+    width: 1.3em;
+}
+
+/* hover style */
+.breadcrumb-item a:hover {
+   text-decoration: underline;
+}
+
+

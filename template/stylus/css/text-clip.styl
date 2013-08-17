@@ -1,0 +1,62 @@
+@import 'includes/examples'
+
+div {
+    margin: 20px;
+}
+
+/* background */
+.box {
+    background-image:
+        linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.3)),
+        url(http://hara-css3.herokuapp.com/img/bg_ocean.jpg);
+    background-size: 100%, cover;
+    display: table-cell;
+    height: 400px;
+    padding: 0 2%;
+    width: 600px;
+    vertical-align: middle;
+}
+
+/* text */
+.box .text {
+    background-clip: text;
+    background-image: url(http://hara-css3.herokuapp.com/img/bg_ocean_text.jpg);
+    font-family: stencil-std, 'Arial Black', sans-serif;
+    font-size: 6.5em;
+    font-weight: bold;
+    line-height: 1.1;
+    text-fill-color(transparent)
+}
+
+/* icon common style */
+.icons span {
+    background-clip: text;
+    font-family: 'FontAwesome';
+    font-size: 7em;
+    margin: 0 .1em;
+    text-fill-color(transparent)
+}
+
+/* heart icon */
+.fontawesome-heart {
+    background-color: #f00;
+    background-image:
+        linear-gradient(transparent, rgba(0,0,0,.4)),
+        linear-gradient(left, #f00 50%, #ffc0cb 50%);
+    content: '';
+    height: 7em;
+    width: 7em;
+}
+
+/* star icon */
+.fontawesome-star {
+    background-color: #ff0;
+    background-image:
+        linear-gradient(transparent, rgba(255,255,255,.2)),
+        linear-gradient(#ff0 50%, #adff4f 50%);
+    background-size: 100%, .1em;
+    content: '';
+    height: 7em;
+    width: 7em;
+}
+

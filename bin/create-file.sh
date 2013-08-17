@@ -8,11 +8,11 @@ STYLUS=${NAME}.styl
 # jade
 cd "${BASE}/template/jade/examples"
 if [ ! -e $JADE ]; then
-	echo "extends ../includes/base\n\nblock content\n\nblock append scripts\n" > $JADE
+	echo "extends ../includes/base\n\nblock append css\n\nblock content\n\nblock append scripts\n" > $JADE
 fi
 
 # stylus
 cd "${BASE}/template/stylus/css"
 if [ ! -e $STYLUS ]; then
-	echo "@import 'nib'\n\n" > $STYLUS
+	echo "@import 'includes/examples'\n\n" > $STYLUS
 fi

@@ -1,0 +1,20 @@
+extends ../includes/base
+
+block append css
+
+block content
+	<fieldset>
+	<legend>色 (1つ選択)</legend>
+	<p class="item"><input type="radio" name="colors" value="Black" checked><span class="text">Black</span></p>
+	<p class="item"><input type="radio" name="colors" value="White"><span class="text">White</span></p>
+	<p class="item"><input type="radio" name="colors" value="Green" disabled><span class="text">Green</span></p>
+	</fieldset>
+
+	<fieldset>
+	<legend>オプション (何個でも)</legend>
+	<p class="item"><input type="checkbox" name="options" value="lens"><span class="text">lens</span></p>
+	<p class="item"><input type="checkbox" name="options" value="lights"><span class="text">lights</span></p>
+	</fieldset>
+
+block append scripts
+

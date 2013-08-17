@@ -1,0 +1,82 @@
+#main {
+  font-family: sans-serif;
+}
+/**
+  * normal styles
+**/
+#main {
+  font-family: serif;
+}
+/* use box layout */
+.box1 .menu .list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  display: box;
+}
+.box1 .menu .item {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  prop: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  prop: 1;
+  width: 100%;
+}
+/* anchor styles */
+.box1 .menu a {
+  background: #06c;
+  color: #eee;
+  display: block;
+  padding: 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  text-indent: -0.5em;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.box1 .menu a:hover {
+  background: #0045a1;
+}
+/* insert icons */
+.box1 .menu a::before {
+  font-family: 'entypo', sans-serif;
+  padding: 0 0.5em 0 0;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.box1 .menu a:hover::before {
+  color: #4db3ff;
+}
+/**
+  * When the screen width is less than 320px,
+  * Change layout and make icon size bigger. 
+**/
+@media screen and (max-width: 320px) {
+  .box1 .menu .list {
+    display: block;
+    overflow: hidden;
+  }
+  .box1 .menu .item {
+    float: left;
+    width: 50%;
+  }
+  .box1 .menu a::before {
+    display: block;
+    font-size: 4em;
+    text-indent: 0.001em;
+    margin: 0 0 0.05em;
+    width: 100%;
+  }
+}

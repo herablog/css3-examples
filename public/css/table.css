@@ -1,0 +1,94 @@
+#main {
+  font-family: sans-serif;
+}
+/* table styles */
+.attendance {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  color: #333;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+.attendance caption {
+  color: #c00;
+  margin: 5px 0;
+  text-align: center;
+}
+/* common style */
+.attendance th,
+.attendance td {
+  border: 1px dashed #ddd;
+  padding: 2px 0.5em;
+}
+/* normal cell */
+.attendance td {
+  color: #c00;
+}
+/* days cell */
+.attendance td:last-child {
+  color: #333;
+}
+.attendance th {
+  font-weight: normal;
+}
+/* thead style */
+.attendance thead th:first-child {
+  width: 3em;
+}
+.attendance thead th:last-child {
+  width: 4em;
+}
+.attendance thead {
+  border-bottom: 1px solid #eee;
+}
+/* change holiday's text color */
+.attendance thead .sat,
+.attendance thead .sun {
+  color: #999;
+}
+/* insert borders */
+.attendance thead th:first-child,
+.attendance tbody th {
+  border-right: 1px solid #eee;
+}
+.attendance thead th:last-child,
+.attendance tbody td:last-child {
+  border-left: 3px double #eee;
+}
+/* empty cells */
+.attendance tbody td:empty:not(:last-child) {
+  background: #f9f9f9;
+}
+/* count days*/
+.attendance tbody tr:first-child td:not(:empty) {
+  counter-increment: totaldays1;
+}
+.attendance tbody tr:nth-child(2) td:not(:empty) {
+  counter-increment: totaldays2;
+}
+.attendance tbody tr:nth-child(3) td:not(:empty) {
+  counter-increment: totaldays3;
+}
+.attendance tbody tr:nth-child(4) td:not(:empty) {
+  counter-increment: totaldays4;
+}
+.attendance tbody tr:nth-child(5) td:not(:empty) {
+  counter-increment: totaldays5;
+}
+/* show days */
+.attendance tbody tr:first-child td:last-child::before {
+  content: counter(totaldays1);
+}
+.attendance tbody tr:nth-child(2) td:last-child::before {
+  content: counter(totaldays2);
+}
+.attendance tbody tr:nth-child(3) td:last-child::before {
+  content: counter(totaldays3);
+}
+.attendance tbody tr:nth-child(4) td:last-child::before {
+  content: counter(totaldays4);
+}
+.attendance tbody tr:nth-child(5) td:last-child::before {
+  content: counter(totaldays5);
+}
