@@ -1,0 +1,108 @@
+#main {
+  font-family: sans-serif;
+}
+/* common styles */
+.graph {
+  margin: 30px;
+  font-family: sans-serif;
+}
+.stage-dark {
+  background-color: #000;
+  background-image: -webkit-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
+  background-image: -moz-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
+  background-image: -o-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
+  background-image: -ms-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
+  background-image: radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
+  padding: 20px;
+}
+/* 3d bar graph */
+.bar-3d-graph {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  display: box;
+  position: relative;
+}
+/* bar */
+.bar-3d-graph-item {
+  background: rgba(235,248,248,0.5);
+  height: 1.5em;
+  position: relative;
+  text-align: center;
+  text-indent: -1em;
+}
+.bar-3d-graph-item .text {
+  color: #000;
+  font-size: 0.8em;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+}
+/* add transition */
+.bar-3d-graph-item,
+.bar-3d-graph-item::before,
+.bar-3d-graph-item::after {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* insert circles */
+.bar-3d-graph-item:first-child::before,
+.bar-3d-graph-item:not(:last-child)::after,
+.bar-3d-graph-item:last-child::after,
+.bar-3d-graph-item:hover::before {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 1em;
+}
+/* apply color and position */
+.bar-3d-graph-item:first-child::before {
+  background: rgba(235,248,248,0.5);
+  clip: rect(0, 0.5em, 1.5em, 0);
+  left: -0.5em;
+  top: 0;
+}
+.bar-3d-graph-item:not(:last-child)::after {
+  background: rgba(235,248,248,0.3);
+  right: 0;
+  top: 0;
+}
+.bar-3d-graph-item:last-child::after {
+  background: rgba(235,248,248,0.3);
+  right: 0;
+  top: 0;
+}
+/* last item */
+.bar-3d-graph-item:last-child {
+  -webkit-border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0 0.5em 0.5em 0;
+}
+/* hover styles */
+/* text color */
+.bar-3d-graph-item:hover .text {
+  color: #fff;
+}
+/* bar color */
+.bar-3d-graph-item:hover,
+.bar-3d-graph-item:first-child:hover::before {
+  background: rgba(0,255,102,0.8);
+}
+.bar-3d-graph-item:not(:last-child):hover::after,
+.bar-3d-graph-item:last-child:hover::after {
+  background: rgba(0,255,102,0.5);
+}
+.bar-3d-graph-item:not(:last-child):hover {
+  -webkit-border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0 0.5em 0.5em 0;
+}
+.bar-3d-graph-item:not(:first-child):hover::before {
+  background: rgba(0,255,102,0.65);
+  -webkit-border-radius: 50% 0 0 50%;
+  border-radius: 50% 0 0 50%;
+  left: -1em;
+  top: 0;
+}

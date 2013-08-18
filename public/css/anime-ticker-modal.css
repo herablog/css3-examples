@@ -1,0 +1,144 @@
+#main {
+  font-family: sans-serif;
+}
+/* common settings */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* display full screen */
+.page {
+  background: rgba(102,204,255,0.6);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+/* overlay styles */
+.overlay {
+  left: 0;
+  position: absolute;
+  top: -100%;
+  -webkit-transition: top 2s;
+  -moz-transition: top 2s;
+  -o-transition: top 2s;
+  -ms-transition: top 2s;
+  transition: top 2s;
+  width: 100%;
+}
+/* when the action is starting */
+.overlay.action {
+  top: -1px;
+}
+/* contents in overlay */
+.overlay-contents {
+  background: #fff;
+  border: 2px solid #6cf;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  border-top-color: #fff;
+  -webkit-box-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff;
+  box-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #666;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 80%;
+}
+/* insert icon */
+.overlay-contents::before {
+  -webkit-animation-name: flicker;
+  -moz-animation-name: flicker;
+  -o-animation-name: flicker;
+  -ms-animation-name: flicker;
+  animation-name: flicker;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  animation-duration: 3s;
+  color: #6cf;
+  font-family: 'FontAwesome', sans-serif;
+  margin: 0 0.5em 0 0;
+}
+/* animation */
+@-moz-keyframes flicker {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes flicker {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-ms-keyframes flicker {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}

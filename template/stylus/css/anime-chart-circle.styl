@@ -1,0 +1,91 @@
+@import 'includes/examples'
+
+#main {
+	padding: 50px;
+}
+
+/* chart */
+.chart {
+    position: relative;
+}
+/* insert gradient */
+.chart::before {
+    background-image:
+        radial-gradient(80% 25%, rgba(255,255,255,.5), rgba(255,255,255,.1)),
+		-webkit-radial-gradient(80% 25%, rgba(255,255,255,.5), rgba(255,255,255,.1));
+    content: '';
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* chart common parts */
+.chart-frame {
+    clip: rect(0,200px,200px,100px);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.chart-item {
+    border-radius: 50%;
+    clip: rect(0,100px,200px,0);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.chart-item.chart-item-extra {
+    transform: rotate(180deg) !important;
+}
+
+.chart-item-over50 {
+    clip: rect(auto, auto, auto, auto);
+}
+
+/* item1 */
+.chart-item1 {
+    transform: rotate(0);
+}
+
+.chart-item1 .chart-item {
+    background: #0f6;
+    transform: rotate(0);
+    transition: all .5s;
+}
+
+.chart-item1 .chart-item.chart-action {
+    transform: rotate(162deg);
+}
+
+/* item2 */
+.chart-item2 {
+    transform: rotate(162deg);
+}
+
+.chart-item2 .chart-item {
+    background: #3cf;
+    transform: rotate(0);
+    transition: all .5s .5s;
+}
+
+.chart-item2 .chart-item.chart-action {
+    transform: rotate(126deg);
+}
+
+/* item3 */
+.chart-item3 {
+    transform: rotate(288deg);
+}
+.chart-item3 .chart-item {
+    background: #fc3;
+    transform: rotate(0);
+    transition: all .5s 1s;
+}
+
+.chart-item3 .chart-item.chart-action {
+    transform: rotate(72deg);
+}

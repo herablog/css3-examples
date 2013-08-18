@@ -1,0 +1,129 @@
+@import 'includes/examples'
+
+#main {
+    padding: 20px 20%;
+}
+
+.loading {
+    margin: 20px 0;
+}
+
+/* loading bar */
+.loading-bar1 {
+    animation: width-0to100 1s infinite ease-out;
+    background: #6cf;
+    height: 5px;
+}
+
+.loading-bar2 {
+    background: #ddd;
+    height: 5px;
+    position: relative;
+}
+
+.loading-bar2::before {
+    animation: width-0to100 1s infinite ease-out;
+    background: #6cf;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+/* loading ball 1 */
+.loading-ball1,
+.loading-ball1::before,
+.loading-ball1::after {
+    animation: loading-bgcolor1 1s infinite;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 25px;
+    width: 25px;
+}
+
+.loading-ball1 {
+    position: relative;
+}
+
+.loading-ball1::before,
+.loading-ball1::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+}
+
+.loading-ball1::before {
+    animation-delay: .25s;
+    left: 30px;
+}
+
+.loading-ball1::after {
+    animation-delay: .5s;
+    left: 60px;
+}
+
+
+/* loading ball 2 */
+.loading-ball2 .item {
+    animation: loading-bigger 1s infinite ease-out;
+    border: 1.5px solid #6cf;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 20px;
+    transform: scale(.2);
+    width: 20px;
+}
+
+.loading-ball2 .item:nth-child(2) {
+    animation-delay: .3s;
+}
+
+.loading-ball2 .item:nth-child(3) {
+    animation-delay: .6s;
+}
+
+
+/* loading circle 2 */
+.loading-circle1 {
+    animation: rotate-r .9s infinite linear;
+    border: 3px solid #6cf;
+    border-radius: 20px;
+    border-right-color: transparent;
+    border-right-width: 1px;
+    box-sizing: border-box;
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+/* keyframe animations */
+@keyframes width-0to100 {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes rotate-r {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes opacity-0to1 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes loading-bgcolor1 {
+    0% { background: #fff; }
+    100% { background: #6cf; }
+}
+
+@keyframes loading-bigger {
+    0% { transform: scale(.2); }
+    100% { transform: scale(1); }
+}
