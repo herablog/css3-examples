@@ -1,8 +1,14 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 li {
+    margin: 30px;
     width: 100px;
     display: inline-block;
 }
+
 p {
     margin: 2px 0;
 }
@@ -27,36 +33,41 @@ p {
 }
 
 .hue-rotate {
-    -webkit-filter: hue-rotate(0deg);
-    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(300deg);
+    filter: hue-rotate(300deg);
 }
 
 .invert {
-    -webkit-filter: invert(0);
-    filter: invert(0);
+    -webkit-filter: invert(.8);
+    filter: invert(.8);
 }
 
 .opacity {
-    -webkit-filter: opacity(1);
-    filter: opacity(1);
+    -webkit-filter: opacity(.6);
+    filter: opacity(.6);
 }
 
 .brightness {
-    -webkit-filter: brightness(1);
-    filter: brightness(1);
-}
-
-.blur {
-    -webkit-filter: blur(0);
-    filter: blur(0);
+    -webkit-filter: brightness(1.5);
+    filter: brightness(1.5);
 }
 
 .contrast {
-    -webkit-filter: contrast(1);
-    filter: contrast(1);
+    -webkit-filter: contrast(2.2);
+    filter: contrast(2.2);
+}
+
+.blur {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
 }
 
 .drop-shadow {
-    -webkit-filter: drop-shadow(1px 0 10px rgba(0,0,0,.2));
-    filter: drop-shadow(1px 0 10px rgba(0,0,0,.2));
+    -webkit-filter: drop-shadow(1px 0 15px rgba(0,0,0,.2));
+    filter: drop-shadow(1px 0 15px rgba(0,0,0,.2));
+}
+
+.edited {
+    -webkit-filter: brightness(.9) contrast(1.3) saturate(1.5);
+    filter: brightness(.9) contrast(1.3) saturate(1.5);
 }
