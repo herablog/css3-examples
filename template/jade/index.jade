@@ -1,4 +1,14 @@
+!!! 5
+html
+	head
+		meta(name="viewport",content="width=device-width")
+		title CSS3 Recipe Book
+		link(rel="stylesheet", href="/css/main.css")
+		link(rel="stylesheet", href="/css/index.css")
 
-each name in names
-	li
-		a(href="/examples/#{name}") #{name}
+	body
+		div#main
+			ul.contents-list
+				each name in names
+					li.contents-item
+						a(href="/examples/#{name}") #{name}
