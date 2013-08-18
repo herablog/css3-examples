@@ -1,0 +1,53 @@
+@import 'includes/examples'
+
+/* list item */
+.album-item {
+    display: inline-block;
+    height: 90px;
+    margin: 30px;
+    position: relative;
+    width: 120px;
+}
+
+.album-item::before,
+.album-item::after {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    content: '';
+    height: 90px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 120px;
+    z-index: -1;
+}
+
+.album-item::before {
+    transform: rotate(-5deg);
+}
+
+.album-item::after {
+    transform: rotate(5deg);
+}
+
+/* hovered styles */
+.album-item:hover::before {
+    transform: rotate(-10deg);
+}
+
+.album-item:hover::after {
+    transform: rotate(10deg);
+}
+
+/* photo */
+.album-photo {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    height: 90px;
+    padding: 5px;
+    width: 100%;
+}

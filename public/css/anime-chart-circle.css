@@ -1,0 +1,134 @@
+#main {
+  font-family: sans-serif;
+}
+#main {
+  padding: 50px;
+}
+/* chart */
+.chart {
+  position: relative;
+}
+/* insert gradient */
+.chart::before {
+  background-image: -webkit-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1)), -webkit--webkit-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  background-image: -moz-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1)), -webkit--moz-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  background-image: -o-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1)), -webkit--o-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  background-image: -ms-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1)), -webkit--ms-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  background-image: radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1)), -webkit-radial-gradient(80% 25%, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  content: '';
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+/* chart common parts */
+.chart-frame {
+  clip: rect(0, 200px, 200px, 100px);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+.chart-item {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  clip: rect(0, 100px, 200px, 0);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+.chart-item.chart-item-extra {
+  -webkit-transform: rotate(180deg) !important;
+  -moz-transform: rotate(180deg) !important;
+  -o-transform: rotate(180deg) !important;
+  -ms-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
+}
+.chart-item-over50 {
+  clip: rect(auto, auto, auto, auto);
+}
+/* item1 */
+.chart-item1 {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.chart-item1 .chart-item {
+  background: #0f6;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.chart-item1 .chart-item.chart-action {
+  -webkit-transform: rotate(162deg);
+  -moz-transform: rotate(162deg);
+  -o-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+/* item2 */
+.chart-item2 {
+  -webkit-transform: rotate(162deg);
+  -moz-transform: rotate(162deg);
+  -o-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.chart-item2 .chart-item {
+  background: #3cf;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: all 0.5s 0.5s;
+  -moz-transition: all 0.5s 0.5s;
+  -o-transition: all 0.5s 0.5s;
+  -ms-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.chart-item2 .chart-item.chart-action {
+  -webkit-transform: rotate(126deg);
+  -moz-transform: rotate(126deg);
+  -o-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+/* item3 */
+.chart-item3 {
+  -webkit-transform: rotate(288deg);
+  -moz-transform: rotate(288deg);
+  -o-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.chart-item3 .chart-item {
+  background: #fc3;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: all 0.5s 1s;
+  -moz-transition: all 0.5s 1s;
+  -o-transition: all 0.5s 1s;
+  -ms-transition: all 0.5s 1s;
+  transition: all 0.5s 1s;
+}
+.chart-item3 .chart-item.chart-action {
+  -webkit-transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg);
+}

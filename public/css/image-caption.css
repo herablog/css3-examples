@@ -1,0 +1,27 @@
+#main {
+  font-family: sans-serif;
+}
+.image {
+  position: relative;
+}
+.photo {
+  width: 100%;
+}
+.caption {
+  background: rgba(255,255,255,0.4);
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  height: 2em;
+  left: 0;
+  line-height: 2;
+  overflow: hidden;
+  padding: 0 0.5em;
+  position: absolute;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
+  top: 5%;
+  white-space: nowrap;
+  width: 100%;
+}

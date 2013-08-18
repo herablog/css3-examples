@@ -1,0 +1,68 @@
+#main {
+  font-family: sans-serif;
+}
+/* list item */
+.album-item {
+  display: inline-block;
+  height: 90px;
+  margin: 30px;
+  position: relative;
+  width: 120px;
+}
+.album-item::before,
+.album-item::after {
+  background: #fff;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  content: '';
+  height: 90px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+  z-index: -1;
+}
+.album-item::before {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.album-item::after {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* hovered styles */
+.album-item:hover::before {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.album-item:hover::after {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+/* photo */
+.album-photo {
+  background: #fff;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  height: 90px;
+  padding: 5px;
+  width: 100%;
+}

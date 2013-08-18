@@ -1,0 +1,44 @@
+@import 'includes/examples'
+
+/* emotions list */
+.emotions {
+    flexbox()
+}
+
+.emotions-item {
+    background: #ff6;
+    box-flex: 1;
+    font-family: pt-sans-narrow, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.emotions-item a {
+    color: #000;
+    display: inline-block;
+    padding: 5px 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* insert icons */
+.emotions-item a::before {
+    display: inline-block;
+    font-family: 'fontelico', sans-serif;
+    width: 100%;
+}
+
+/* set transition */
+.emotions-item a,
+.emotions-item a::before {
+    transition: all .2s;
+}
+
+/* hover styles */
+.emotions-item a:hover {
+    background: #ff0;
+}
+
+.emotions-item a:hover::before {
+    transform: scale(1.5);
+}

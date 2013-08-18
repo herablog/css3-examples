@@ -1,0 +1,17 @@
+@import 'includes/examples'
+
+#cover-area {
+    background: #000 url(http://hara-css3.herokuapp.com/img/cake.jpg) no-repeat;
+    background-position: 0 -1px;
+    background-size: 400px auto;
+    height: 200px;
+    width: 400px;
+}
+
+#cover-area::after {
+    content: '';
+    background: linear-gradient(top, transparent 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,.6) 100%);
+    display: block;
+    height: 200px;
+    width: 400px;
+}
