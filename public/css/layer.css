@@ -1,0 +1,36 @@
+#main {
+  font-family: sans-serif;
+}
+/* Common style */
+.layer,
+.layer .bg {
+  height: 600px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 800px;
+}
+/* layer */
+.layer {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+}
+.layer:first-child .bg {
+  background: url("/img/bg_flower2.jpg");
+}
+.layer:nth-child(2) .bg {
+  background: url("/img/bg_flower.jpg");
+}
+/* front layer */
+.layer:last-child {
+  background-color: rgba(255,255,255,0.2);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.layer:last-child .bg {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+}
