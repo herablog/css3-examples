@@ -1,0 +1,22 @@
+extends ../includes/base
+
+block append css
+
+block content
+	<div id="contents">
+	<div class="layer">
+	<div class="bg"></div>
+	<div class="main">Layer 3</div>
+	</div>
+	<div class="layer">
+	<div class="bg"></div>
+	<div class="main">Layer 2</div>
+	</div>
+	<div class="layer">
+	<div class="bg"></div>
+	<div class="main">Layer 1</div>
+	</div>
+	</div>
+
+block append scripts
+	script(src="/js/examples/layer.js")
