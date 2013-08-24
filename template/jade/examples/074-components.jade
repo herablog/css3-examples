@@ -1,0 +1,32 @@
+extends ../includes/base
+
+block append css
+	link(rel="stylesheet", href="http://weloveiconfonts.com/api/?family=fontawesome")
+
+block content
+	h1.heading App Seettings
+	ul.list
+		li(href="#", class="list-wrap list-item")
+			div(class="list-image")
+				img(src="http://hara-css3.herokuapp.com/img/icon_bookmark.png", alt="bookmark", class="list-image-thumb")
+			div(class="list-main")
+				p.list-item-title Bookmark App
+				p.list-subtext Let's bookmark websites you like.
+	ul.list
+		li.list-wrap
+			a(href="#", class="list-link list-item list-arrow")
+				div(class="list-image fontawesome-picture")
+				div(class="list-main") Photo
+		li.list-wrap
+			a(href="#", class="list-link list-item list-arrow")
+				div(class="list-image fontawesome-music")
+				div(class="list-main") Music
+		li.list-wrap
+			a(href="#", class="list-link list-item list-arrow")
+				div(class="list-image fontawesome-download-alt")
+				div(class="list-main") Downloaded
+	
+	div(class="frame-base frame")			
+		button(class="button-warning button-max button") Delete this app
+
+block append scripts
