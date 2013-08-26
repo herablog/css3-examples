@@ -39,8 +39,8 @@
   counter-increment: counter;
 }
 /* show counter */
-.counter-item:last-child .counter-select::before,
-.counter-item:last-child .counter-select::after {
+.counter-result:before,
+.counter-result:after {
   color: #fff;
   display: block;
   font-family: 'Josefin Sans', sans-serif;
@@ -50,13 +50,13 @@
   top: 0;
   width: 2em;
 }
-.counter-item:last-child .counter-select::after {
-  content: "/ " counter(total);
-  right: 0.5em;
-  text-align: right;
-}
-.counter-item:last-child .counter-select::before {
+.counter-result:before {
   content: counter(counter);
   right: 1.4em;
   text-align: center;
+}
+.counter-result:after {
+  content: "/ " counter(total);
+  right: 0.5em;
+  text-align: right;
 }
