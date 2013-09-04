@@ -1,0 +1,91 @@
+@import 'includes/examples'
+
+/* heading */
+.heading {
+    background: #221f20;
+    color: #fdec52;
+    font-size: .9em;
+    padding: .2em .5em;
+    text-align: center;
+}
+
+/* item */
+.item {
+    border-radius: 2px;
+    color: #333;
+    counter-increment: num;
+    padding: 10px 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.item:nth-child(1n) {
+    background: rgba(253,236,82,1);
+}
+
+.item:nth-child(2n) {
+    background: rgba(253,236,82,.8);
+}
+
+.item:nth-child(3n) {
+    background: rgba(253,236,82,.6);
+}
+
+.item:nth-child(4n) {
+    background: rgba(253,236,82,.4);
+}
+
+.item:nth-child(5n) {
+    background: rgba(253,236,82,.3);
+}
+
+/* ranking icon */
+.item::before {
+    background: #fc3;
+    box-shadow: 0 0 4px rgba(128,128,128,.4);
+    content: '';
+    height: 1.5em;
+    left: 1em;
+    margin-top: -.7em;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 1.5em;
+}
+
+.item::after {
+    background: #fc3;
+    content: counter(num);
+    font-family: Arial;
+    font-style: Italic;
+    font-weight: bold;
+    height: 1.5em;
+    left: 1em;
+    line-height: 1.5;
+    margin-top: -.7em;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    top: 50%;
+    width: 1.5em;
+}
+
+/* list contents */
+.item .thumbnail {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.item .picture {
+    border-radius: 2px;
+    height: 67px;
+    width: 100px;
+}
+
+.item .name {
+    font-size: .8em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+}

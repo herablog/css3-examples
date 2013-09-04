@@ -14,7 +14,12 @@ body {
 }
 .list3d-item {
   background: #999;
-  box-reflect: below -3px linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5));
+  box-reflect: below -3px -webkit-gradient(linear, left top, left bottom, color-stop(0.5, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.5)));
+  box-reflect: below -3px -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+  box-reflect: below -3px -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+  box-reflect: below -3px -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+  box-reflect: below -3px -ms-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+  box-reflect: below -3px linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
   -webkit-box-reflect: below -3px -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5));
   height: 100px;
   margin: 0 -20px;
@@ -29,6 +34,9 @@ body {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
+  width: 100px;
+}
+.list3d-item img {
   width: 100px;
 }
 .list3d-item:hover {

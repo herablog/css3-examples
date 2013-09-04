@@ -1,0 +1,40 @@
+@import 'includes/examples'
+
+.image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+.photo {
+    width: 100%;
+}
+
+.photo:hover + .description {
+    display: block;
+}
+
+.description {
+    background-color: rgba(204, 153, 153, .4);
+    background-image:
+        linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.6));
+    border: 10px solid rgba(0,0,0,.8);
+    box-sizing: border-box;
+    display: block;
+    font-size: .8em;
+    height: 200px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.description a {
+    display: block;
+    height: 160px;
+    color: #000;
+    overflow: hidden;
+    text-decoration: none;
+}
+

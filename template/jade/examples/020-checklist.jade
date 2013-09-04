@@ -1,0 +1,23 @@
+extends ../includes/base
+
+block append css
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css'>
+
+block content
+	<section class="checklist">
+	<h1>持ち物リスト</h1>
+	<ul class="counter">
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="1" class="counter-select">リュック</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="2" class="counter-select">ビニールシート</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="3" class="counter-select">雨具</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="4" class="counter-select">ティッシュ・タオル・ハンカチ</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="5" class="counter-select">お弁当・水筒</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="6" class="counter-select">おやつ (500円まで)</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="7" class="counter-select">酔い止め</li>
+	<li class="counter-item"><input type="checkbox" name="counter-select" value="8" class="counter-select">保険証</li>
+	</ul>
+	<p class="counter-result"></p>
+	</section>
+
+block append scripts
+

@@ -1,0 +1,87 @@
+@import 'includes/examples'
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    box-sizing: border-box;
+    height: 200px;
+	margin: 20px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+.title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 34px;
+	font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin: -17px 0 0;
+    width: 100%;
+}
+
+#box1 {
+    background-color: #c09;
+    background-image: radial-gradient(50% 40%, rgba(204,0,102,0) 20%, rgba(204,0,153,1) 100%); 
+}
+
+#box1 .title {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 15px rgba(0,0,0,.2);
+}
+
+#box2 {
+    background-image:
+        radial-gradient(50% 40%, rgba(204,0,102,0) 20%, rgba(204,0,153,1) 100%),
+        linear-gradient(left, #f9f 50%, #fff 50%);
+    background-size: 30px, 100%;
+}
+
+#box3 {
+    background-image:
+        radial-gradient(50% 40%, rgba(204,0,102,0) 20%, rgba(204,0,153,1) 100%),
+        linear-gradient(left, #f9f 50%, #fff 50%);
+    background-size: 100%, 30px;
+}
+
+#box4 {
+    background-image:
+        radial-gradient(50% 40%, transparent 20%, rgba(255,255,255,.3) 100%),
+        linear-gradient(left, #f00 0,#f00 14.2%, #ff8000 14.2%,#ff8000 28.4%, #ff0 28.4%,#ff0 42.6%, #0f0 42.6%,#0f0 56.8%, #0ff 56.8%,#0ff 71%, #00f 71%,#00f 85.2%, #f0f 85.2%);
+    background-size: 100%;
+}
+
+#box5 {
+    background-image:
+        linear-gradient(rgba(255,255,255,.4) 0, rgba(255,255,255,.0) 50%, rgba(255,255,255,.4) 100%),
+        linear-gradient(#ffc 0, #ffc 50%, #cff 50%);
+    background-size: 100%, 20px;
+}
+
+#box6 {
+    background-color: #c99;
+    background-image:
+        linear-gradient(rgba(0,0,0,.3) 0, transparent 60%);
+    border: 7px solid #000;
+}
+
+#box7 {
+    background-color: #000;
+    background-image:
+        linear-gradient(left top, #f00 25%,transparent 25%, transparent 100%),
+        linear-gradient(right top, #f00 25%,transparent 25%, transparent 100%),
+        linear-gradient(left bottom, #f00 25%,transparent 25%, transparent 100%),
+        linear-gradient(right bottom, #f00 25%,transparent 25%, transparent 100%);
+    background-size: 20px;
+}
+
+#box7 .title {
+    color: #fff;
+    opacity: .8;
+}

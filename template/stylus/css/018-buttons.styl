@@ -1,0 +1,165 @@
+@import 'includes/examples'
+
+#main {
+    padding: 50px;
+}
+
+div {
+    margin: 0 0 30px;
+}
+
+/* button common style */
+.button {
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button[disabled] {
+    cursor: default;
+}
+
+/* button default */
+.button-default {
+    background: #efefef;
+    border-radius: 4px;
+    color: #333;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.button-default:hover {
+    background: #d8d8d8;
+}
+
+.button-default[disabled],
+.button-default[disabled]:hover {
+    background: #efefef;
+    color: #666;
+    opacity: .8;
+}
+
+/* button primary */
+.button-primary {
+    background: #6cf;
+    border-radius: 4px;
+    color: #333;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.button-primary:hover {
+    background: #39f;
+}
+
+.button-primary[disabled],
+.button-primary[disabled]:hover {
+    background: #6cf;
+    color: #666;
+    opacity: .8;
+}
+
+/* button warning */
+.button-warning {
+    background: #f06;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.button-warning:hover {
+    background: #c06;
+}
+
+.button-warning[disabled],
+.button-warning[disabled]:hover {
+    background: #f06;
+    color: #aaa;
+    opacity: .8;
+}
+
+/* button gradient default */
+.button-gradient-default {
+    background: linear-gradient(#f7f7f7, #e1e1e1);
+    border: solid 1px rgba(0,0,0,.2);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #fff , inset 0 1px 1px rgba(255,255,255,.4);
+    color: #4dac26;
+    padding: 6px 10px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.button-gradient-default:hover {
+    background: linear-gradient(#c1c1c1, #d7d7d7);
+    color: rgba(77,172,38,.7);
+}
+
+.button-gradient-default[disabled],
+.button-gradient-default[disabled]:hover {
+    background: linear-gradient(#f7f7f7, #e1e1e1);
+    color: #4dac26;
+    opacity: .6;
+}
+
+/* button gradient primary */
+.button-gradient-primary {
+    background: linear-gradient(#55c40d, #3bab09);
+    border: solid 1px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #fff , inset 0 1px 1px rgba(255,255,255,.4);
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0,0,0,.5);
+}
+
+.button-gradient-primary:hover {
+    background: linear-gradient(#4ea40d, #6abb0e);
+    color: rgba(255,255,255,.7);
+    text-shadow: 0 -1px 1px rgba(77,137,5,.5);
+}
+
+.button-gradient-primary[disabled],
+.button-gradient-primary[disabled]:hover {
+    background: linear-gradient(#55c40d, #3bab09);
+    color: #fff;
+    opacity: .6;
+}
+
+/* button gradient warning */
+.button-gradient-warning {
+    background: linear-gradient(#fd5f6e, #e61436);
+    border: solid 1px rgba(0,0,0,.2);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #fff , inset 0 1px 1px rgba(255,255,255,.4);
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0,0,0,.5);
+}
+
+.button-gradient-warning:hover {
+    background: linear-gradient(#d71535, #ea5765);
+    color: rgba(255,255,255,.7);
+}
+
+.button-gradient-warning[disabled],
+.button-gradient-warning[disabled]:hover {
+    background: linear-gradient(#fd5f6e, #e61436);
+    color: #fff;
+    opacity: .6;
+}
+
+/* button size */
+.button-max {
+    width: 100%;
+}
+
+.button-square-middle {
+    height: 150px;
+    line-height: 138px;
+    width: 150px;
+}

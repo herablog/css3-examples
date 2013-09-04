@@ -1,0 +1,37 @@
+@import 'includes/examples'
+
+/* rgba() */
+header {
+    background: rgba(204,204,255,.4);
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 560px;
+}
+
+header::before {
+    background: rgba(204,0,204,0);
+    border-radius: 50%;
+    box-shadow:
+        10px -105px 0 rgba(204,0,204,.2),
+        30px -200px 0 rgba(204,102,204,.1),
+        -30px -290px 0 rgba(204,102,204,.1),
+        190px -250px 0 rgba(204,102,204,.1),
+        270px -320px 0 rgba(204,0,204,.2),
+        450px -100px 0 rgba(204,0,204,.2);
+    content: '';
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+}
+
+header h1 {
+    color: rgba(0,0,0,.8);
+    font-family: poiret-one, sans-serif;
+    font-size: 3.5em;
+    left: 15px;
+    position: absolute;
+    top: 58px;
+}

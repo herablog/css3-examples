@@ -1,0 +1,190 @@
+@import 'includes/examples'
+
+/* basic styles */
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* container */
+.container {
+    background-color: #006;
+    background-image:
+        linear-gradient(rgba(102,0,102,.4), #006);
+    counter-reset: count;
+    height: 405px;
+    overflow: hidden;
+    width: 720px;
+}
+
+/* count */
+.count {
+    left: 50%;
+    margin: -5em 0 0 -10em;
+    position: relative;
+    top: 50%;
+}
+
+/* count number */
+.count-item {
+    color: #fff;
+    counter-increment: count;
+    font-family: 'Stalinist One', cursive;
+    font-size: 10em;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #cf126e,
+        0 0 30px #cf126e,
+        0 0 40px #cf126e,
+        0 0 50px #cf126e,
+        0 0 75px #cf126e;
+    top: 0;
+    width: 2em;
+}
+
+.count-item::before {
+    content: counter(count);
+}
+
+/* set animation */
+.count-item {
+    animation-name: disappear;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}    
+
+.count-item:nth-child(9) {
+    animation-delay: 1s;
+}
+
+.count-item:nth-child(8) {
+    animation-delay: 2s;
+}
+
+.count-item:nth-child(7) {
+    animation-delay: 3s;
+}
+
+.count-item:nth-child(6) {
+    animation-delay: 4s;
+}
+
+.count-item:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.count-item:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.count-item:nth-child(3) {
+    animation-delay: 7s;
+}
+
+.count-item:nth-child(2) {
+    animation-delay: 8s;
+}
+
+.count-item:nth-child(1) {
+    animation-delay: 9s;
+}
+
+
+/* fireworks */
+.fireworks {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.fireworks-item {
+    color: #fff;
+    font-family: 'entypo', sans-serif;
+    font-size: 10em;
+    opacity: 0;
+    position: absolute;
+}
+
+.fireworks-item:nth-child(1) {
+    left: 300px;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #cf126e,
+        0 0 30px #cf126e,
+        0 0 40px #cf126e,
+        0 0 50px #cf126e,
+        0 0 75px #cf126e;
+    top: 100px;
+}
+
+.fireworks-item:nth-child(2n) {
+    left: 60px;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #3f6,
+        0 0 30px #3f6,
+        0 0 40px #3f6,
+        0 0 50px #3f6,
+        0 0 75px #3f6;
+    top: 20px;
+}
+
+.fireworks-item:nth-child(3n) {
+    left: 530px;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #fc3,
+        0 0 30px #fc3,
+        0 0 40px #fc3,
+        0 0 50px #fc3,
+        0 0 75px #fc3;
+    top: 10px;
+}
+
+/* set animation */
+.fireworks-item {
+    animation-name: fireworks;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+.fireworks-item:nth-child(1) {
+    animation-delay: 10.5s;
+}
+
+.fireworks-item:nth-child(2) {
+    animation-delay: 11.2s;
+}
+
+.fireworks-item:nth-child(3) {
+    animation-delay: 11.4s;
+}
+
+
+/* animation */
+@keyframes disappear {
+    from,
+    50% { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fireworks {
+    from { opacity: 0; }
+    5% { opacity: 1; transform: scale(2); }
+    40% { opacity: 1; transform: scale(2); }
+    to { opacity: 0; transform: scale(2); }
+}
+

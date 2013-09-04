@@ -1,0 +1,76 @@
+@import 'includes/examples'
+
+/**
+  * normal styles
+**/
+
+#main {
+	font-family: serif;
+}
+
+/* use box layout */
+.box1 .menu .list {
+    flexbox()
+}
+
+.box1 .menu .item {
+    box-flex: 1;
+    box-flex: 1;
+    width: 100%;
+}
+
+/* anchor styles */
+.box1 .menu a {
+    background: #06c;
+    color: #eee;
+    display: block;
+    padding: .5em 0;
+    text-align: center;
+    text-decoration: none;
+    text-indent: -.5em;
+    transition: all .1s linear;
+}
+
+.box1 .menu a:hover {
+    background: #0045a1;
+}
+
+/* insert icons */
+.box1 .menu a::before {
+    font-family: 'entypo', sans-serif;
+    padding: 0 .5em 0 0;
+    transition: all .1s linear;
+}
+
+.box1 .menu a:hover::before {
+    color: #4db3ff;
+}
+
+
+/**
+  * When the screen width is less than 320px,
+  * Change layout and make icon size bigger. 
+**/
+@media screen and (max-width: 320px) {
+    
+    /* use float layout */
+    .box1 .menu .list {
+        display: block;
+        overflow: hidden;
+    }
+    
+    .box1 .menu .item {
+        float: left;
+        width: 50%;
+    }
+    
+    /* make icon size bigger */
+    .box1 .menu a::before {
+        display: block;
+        font-size: 4em;
+        text-indent: .001em;
+        margin: 0 0 .05em;
+        width: 100%;
+    }
+
+}

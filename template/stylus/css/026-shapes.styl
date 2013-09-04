@@ -1,0 +1,120 @@
+@import 'includes/examples'
+
+.shape {
+    margin: 50px;
+}
+
+/* square */
+.shape-square {
+    background: #6cf;
+    height: 100px;
+    width: 100px;
+}
+
+/* circle */
+.shape-circle {
+    background: #6cf;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+/* triangle */
+.shape-triangle-top {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #6cf;
+    height: 0;
+    width: 0;
+}
+
+.shape-triangle-bottom-left {
+    border-style: solid;
+    border-width: 100px 0 0 100px;
+    border-color: transparent transparent transparent #6cf;
+    height: 0px;
+    width: 0px;
+}
+
+/* heart */
+.shape-heart {
+    height: 90px;
+    position: relative;
+    width: 100px;
+}
+
+.shape-heart::before,
+.shape-heart::after {
+    background: #6cf;
+    border-radius: 50px 50px 0 0;
+    content: "";
+    height: 80px;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+
+.shape-heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.shape-heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* diamond */
+.shape-diamond {
+    background: #6cf;
+    height: 100px;
+    transform: scale(.6) rotate(45deg);
+    width: 100px;
+}
+
+
+/* star */
+.shape-star {
+    position: relative;
+    width: 0;
+    height:0;
+}
+
+.shape-star::before,
+.shape-star::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.shape-star {
+    border-right:  100px solid transparent;
+    border-bottom: 70px  solid #6cf;
+    border-left:   100px solid transparent;
+    margin: 50px 0;
+    transform: scale(.5) rotate(35deg);
+}
+
+.shape-star::before {
+    border-bottom: 80px solid #6cf;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    content: '';
+    left: -65px;
+    top: -45px;
+    transform: rotate(-35deg);
+}
+
+.shape-star::after {
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #6cf;
+    border-left: 100px solid transparent;
+    content: '';
+    left: -105px;
+    top: 3px;
+    transform: rotate(-70deg); 
+}
+
+

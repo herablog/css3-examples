@@ -1,0 +1,72 @@
+@import 'includes/examples'
+
+h1 {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    height: 200px;
+	margin: 20px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+#box1 {
+    background-color: #006;
+	background-image: radial-gradient(50% 40%, rgba(255,255,255,.35) 0, transparent 100%);
+    background-image: -webkit-radial-gradient(50% 40%, rgba(255,255,255,.35) 0, transparent 100%);
+}
+
+.title {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 34px;
+	font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin: -17px 0 0;
+    width: 100%;
+}
+
+#box1 .title {
+    text-shadow: 0 4px 20px rgba(0,0,0,.4);
+}
+
+#box2 {
+    background-color: #006;
+    background-image: radial-gradient(50% 40%, rgba(255,255,255,.3) 0, rgba(0,0,0,.5) 100%);
+	background-image: -webkit-radial-gradient(50% 40%, rgba(255,255,255,.3) 0, rgba(0,0,0,.5) 100%);
+}
+
+#box2 .title {
+    text-shadow: 0 1px 10px rgba(0,0,0,.4);
+}
+
+#box3 {
+    background-color: #006;
+    overflow: hidden;
+}
+
+#box3::before {
+    background-color: #006;
+    background-image: radial-gradient(rgba(255,255,255,.6) 0, transparent 100%);
+	background-image: -webkit-radial-gradient(rgba(255,255,255,.6) 0, transparent 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+}
+
+#box3 .title {
+    text-shadow: 0 6px 30px rgba(0,0,0,.4);
+}

@@ -63,11 +63,12 @@
 }
 /* gradient */
 .balloon-gradient {
-  background: -webkit-linear-gradient(#6f3, #0c0 95%);
-  background: -moz-linear-gradient(#6f3, #0c0 95%);
-  background: -o-linear-gradient(#6f3, #0c0 95%);
-  background: -ms-linear-gradient(#6f3, #0c0 95%);
-  background: linear-gradient(#6f3, #0c0 95%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6f3), color-stop(0.95, #0c0));
+  background: -webkit-linear-gradient(top, #6f3 0, #0c0 95%);
+  background: -moz-linear-gradient(top, #6f3 0, #0c0 95%);
+  background: -o-linear-gradient(top, #6f3 0, #0c0 95%);
+  background: -ms-linear-gradient(top, #6f3 0, #0c0 95%);
+  background: linear-gradient(top, #6f3 0, #0c0 95%);
   -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #fff;

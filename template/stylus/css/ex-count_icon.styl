@@ -1,0 +1,101 @@
+@import 'includes/examples'
+
+html,
+body,
+#main
+    height: 100%
+    width: 100%
+
+
+/* common styles */
+#main
+    background-color: #000
+    background-image:
+        -webkit-radial-gradient(80% 35%, rgba(255,255,255,.2), transparent)
+    font-family: sans-serif
+    padding: 30px 40px
+    position: relative
+    z-index: -10
+
+
+.list
+    overflow: hidden
+    width: 320px
+
+
+.item
+    background: #39f
+    border-radius: 4px
+    float: left
+    height: 60px
+    margin: 10px
+    position: relative
+    width: 60px
+    z-index: -5
+
+
+.item.ovf-hidden
+    overflow: hidden
+
+
+/* circle counter */
+/* set position */
+.counter-circle
+    position: absolute
+    right: -.5em
+    top: -.5em
+
+
+/* set style */
+.counter-circle
+    background: red
+    border: 2px solid #fff
+    border-radius: 1em
+    box-shadow:
+        0 0 2px rgba(0,0,0,0.2),
+        0 1px 1px rgba(0,0,0,0.3)
+    color: #fff
+    display: inline-block
+    font-size: .9em
+    font-weight: bold
+    height: 1em
+    line-height: 1
+    max-width: 2em
+    min-width: 1em
+    overflow: hidden
+    padding: 2px
+    text-align: center
+    text-overflow: ellipsis
+    word-wrap: nowrap
+
+
+/* triangle counter */
+/* set position */
+.counter-triangle
+    position: absolute
+    right: 0
+    bottom: 0
+
+
+/* set text styles */
+.counter-triangle
+    color: #333
+    font-size: .8em
+    font-weight: bold
+    max-width: 3em
+    min-width: 1.5em
+    text-align: center
+    text-shadow: 1px 1px 0 rgba(255,255,255,.6)
+
+
+/* insert triangle background */
+.counter-triangle:before
+    background: rgba(255,255,255,.6)
+    bottom: -35px
+    content: ''
+    height: 60px
+    position: absolute
+    right: -35px
+    -webkit-transform: rotate(45deg)
+    width: 60px
+    z-index: -2

@@ -1,3 +1,6 @@
+#main {
+  font-family: sans-serif;
+}
 html,
 body,
 #main {
@@ -7,10 +10,6 @@ body,
 /* common styles */
 #main {
   background-color: #000;
-  background-image: -webkit--webkit-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
-  background-image: -webkit--moz-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
-  background-image: -webkit--o-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
-  background-image: -webkit--ms-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
   background-image: -webkit-radial-gradient(80% 35%, rgba(255,255,255,0.2), transparent);
   font-family: sans-serif;
   padding: 30px 40px;

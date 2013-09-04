@@ -1,0 +1,58 @@
+@import 'includes/examples'
+
+/* common styles */
+.graph {
+    margin: 30px;
+    font-family: sans-serif;
+}
+
+/* stacked bar */
+.stacked-bar-graph {
+    background: #eee;
+    flexbox()
+    overflow: hidden;
+    position: relative;
+}
+
+/* hide bar */
+.stacked-bar-graph::before {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 1em;
+    left: 0;
+    position: absolute;
+    transform: translateX(100%);
+    width: 100%;
+    top: 0;
+}
+
+/* set animation */
+.stacked-bar-graph::before {
+    animation-name: x0to1;
+    animation-duration: 2s;
+}
+
+/* animation */
+@keyframes x0to1 {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+/* bar styles */
+.stacked-bar-item {
+    background: #f93;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: .8em;
+    overflow: hidden;
+    padding: .05em;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.stacked-bar-item:not(:last-child) {
+    border-right:2px solid #fff;
+}
+

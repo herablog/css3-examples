@@ -1,0 +1,51 @@
+#main {
+  font-family: sans-serif;
+}
+body {
+  background: #fff;
+}
+/* box styles */
+.box-example {
+  margin: 10px 20px;
+}
+.box-square-basic {
+  background: #6cf;
+  height: 100px;
+  width: 100px;
+}
+.box-square-signal {
+  background: #f03;
+  height: 100px;
+  width: 100px;
+}
+.box-rectangle-basic {
+  background: #6cf;
+  height: 100px;
+  width: 150px;
+}
+.box-half-basic {
+  background: #6cf;
+  height: 50px;
+  width: 100px;
+}
+/* border-radius */
+.border-radius-round {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.border-radius-xy {
+  -webkit-border-radius: 80px 50px 20px 50px/40px 50px 50px 25px;
+  border-radius: 80px 50px 20px 50px/40px 50px 50px 25px;
+}
+.border-radius-normal {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.border-radius-halfcircle {
+  -webkit-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+}
+.border-radius-quarter {
+  -webkit-border-radius: 100% 0 0 0;
+  border-radius: 100% 0 0 0;
+}

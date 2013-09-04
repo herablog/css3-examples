@@ -1,0 +1,88 @@
+@import 'includes/examples'
+
+body {
+    background: #e8e8e8;
+}
+
+/* Common settings */
+#contents {
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.menu,
+.main {
+    min-height: 500px;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+/* Menu */
+.menu {
+    background: #333;
+}
+
+.menu-item {
+    border-bottom: 1px solid #555;
+    height: 2.5em;
+    line-height: 2.5;
+}
+
+.menu-item a {
+    color: #ddd;
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    background: #464646;
+}
+
+/* Main contents area */
+.main {
+    background: #efefef;
+    border-top: 1px solid #ddd;
+    color: #666;
+    display: table-cell;
+    font-size: 5em;
+    left: 0;
+    padding: 40px 0 0;
+    text-align: center;
+    transition-duration: .2s;
+    transition-property: left;
+    transition-timing-function: ease-out;
+    z-index: 10;
+}
+
+/* Menu button */
+.openMenu {
+    appearance: none;
+    background: #ccc;
+    border: 2px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 25px;
+    margin: 5px;
+    position: relative;
+    width: 25px;
+}
+
+.openMenu::before {
+    color: #333;
+    content: "menu";
+    font-size: .8em;
+    left: 27px;
+    position: absolute;
+    top: 5px;
+}
+
+.openMenu:checked {
+    background: #6f3;
+    border: 2px solid #3c0;
+}
+
+.openMenu:checked ~ .main {
+    left: 40%;
+}
