@@ -1,0 +1,58 @@
+@import 'includes/examples'
+
+#main {
+	padding: 50px;
+}
+
+.music {
+    color: #333;
+}
+
+/* music icon */
+.icon-music {
+    display: inline-block;
+    padding: 0 .5em 0 0;
+    position: relative;
+    width: 1em;
+}
+
+/* bar */
+.icon-music-bar {
+    background: #f3c;
+    display: inline-block;
+    height: 1em;
+    position: absolute;
+    width: .2em;
+}
+
+/* left bar */
+.icon-music-bar:nth-child(1) {
+    animation: wave-high .3s .15s linear alternate infinite;
+    bottom: 0;
+    left: 0;
+}
+
+/* middle bar */
+.icon-music-bar:nth-child(2) {
+    animation: wave-high .3s linear alternate infinite;
+    bottom: 0;
+    left: .3em;
+}
+
+/* right bar */
+.icon-music-bar:nth-child(3) {
+    animation: wave-low 1s linear alternate infinite;
+    bottom: 0;
+    left: .6em;
+}
+
+/* animations */
+@keyframes wave-high {
+    from { height: 0; }
+    to { 1em; }
+}
+
+@keyframes wave-low {
+    from { height: .2em; }
+    to { height: .6em; }
+}

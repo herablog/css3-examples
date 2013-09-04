@@ -1,0 +1,335 @@
+@import 'includes/examples'
+
+/* box styles */
+.box-example {
+    margin: 10px 20px;
+}
+.box-square-basic {
+    background: #6cf;
+    height: 100px;
+    width: 100px;
+}
+
+.box-square-signal {
+    background: #f03;
+    height: 100px;
+    width: 100px;
+}
+
+.box-rectangle-basic {
+    background: #6cf;
+    height: 100px;
+    width: 150px;
+}
+
+.box-half-basic {
+    background: #6cf;
+    height: 50px;
+    width: 100px;
+}
+
+
+/* border-radius */
+.border-radius-round {
+    border-radius: 50%;
+}
+
+.border-radius-xy {
+    border-radius: 80px 50px 20px 50px / 40px 50px 50px 25px;
+}
+
+.border-radius-normal {
+    border-radius: 4px;
+}
+
+.border-radius-halfcircle {
+    border-radius: 50px 50px 0 0;
+}
+
+.border-radius-quarter {
+    border-radius: 100% 0 0 0;
+}
+
+
+/* box shadow */
+.box-shadow-flow {
+    box-shadow: 0 1px 10px rgba(0,0,0,.2);
+}
+
+.box-shadow-inset {
+    box-shadow: inset 0 0 70px rgba(102,153,255,.5);
+}
+
+.box-shadow-signal {
+    box-shadow:
+        110px 0 0 #333,
+        220px 0 0 #333,
+        330px 0 0 #333;
+}
+
+/* text style */
+.text-example {
+    font-family: sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.text-default {
+    color: #6cf;
+}
+
+.text-candy {
+    color: #f3c;
+}
+
+/* text shadow */
+.text-shadow-basic {
+    text-shadow: 2px 2px 1px rgba(0,0,0,.2);
+}
+
+.text-shadow-candy {
+    text-shadow:
+        3px 3px 0 #ff3,
+        6px 6px 0 #3f3,
+        9px 9px 0 #39f;
+}
+
+/* gradient */
+.linear-gradient-basic {
+    background-color: #6cf;
+    background-image: -webkit-linear-gradient(top, #6cf, rgba(51,102,255,.8));
+}
+
+.radial-gradient-basic {
+    background-color: #6cf;
+    background-image: -webkit-radial-gradient(50% 50%,  cover, rgba(102,204,255,.6), rgba(51,102,255,.8));
+}
+
+.linear-gradient-border-basic {
+    background-color: #6cf;
+    background-image: -webkit-linear-gradient(left, #ff9 50%, transparent 50%);
+    -webkit-background-size: 1em;
+}
+
+.linear-gradient-multi {
+    background-image:
+        -webkit-linear-gradient(rgba(255,255,51,.4), rgba(255,51,204,.4), rgba(255,153,255,.4), rgba(102,204,255,.4)),
+        -webkit-linear-gradient(right, rgba(255,255,51,.4), rgba(255,51,204,.4), rgba(255,153,255,.4), rgba(102,204,255,.4)),
+        -webkit-linear-gradient(left, rgba(255,255,51,.4), rgba(255,51,204,.4), rgba(255,153,255,.4), rgba(102,204,255,.4));
+}
+
+/* flexbox */
+.flexbox {
+    border: 2px solid #6cf;
+    border-radius: 2px;
+    display: -webkit-box;
+    font-family: sans-serif;
+}
+
+.flexbox-item {
+    background: #6cf;
+    border-radius: 2px;
+    color: #fff;
+    height: 2em;
+    line-height: 2;
+    margin: .5em;
+    text-align: center;
+    width: 2em;
+}
+
+.flexbox {
+    display: -webkit-box;
+}
+
+.flexbox-inline {
+    display: -webkit-inline-box;
+}
+
+.flex-1 {
+    -webkit-box-flex: 1;
+}
+
+.flex-2 {
+    -webkit-box-flex: 2;
+}
+
+.flexbox-pack-center {
+    -webkit-box-pack: center;
+}
+
+.flexbox-pack-end {
+    -webkit-box-pack: end;
+}
+
+.flexbox-pack-justify {
+    -webkit-box-pack: justify;
+}
+
+.flexbox-orient-vertical {
+    -webkit-box-orient: vertical;
+}
+
+.flexbox-direction-reverse {
+    -webkit-box-direction: reverse;
+}
+
+.ordinal-group-1 {
+    -webkit-box-ordinal-group: 1;
+}
+
+.ordinal-group-2 {
+    -webkit-box-ordinal-group: 2;
+}
+
+.ordinal-group-3 {
+    -webkit-box-ordinal-group: 3;
+}
+
+.ordinal-group-4 {
+    -webkit-box-ordinal-group: 4;
+}
+
+/* before/after */
+.before-after-quote {
+    color: #333;
+    padding: 0 2em;
+    position: relative;
+}
+
+.before-after-quote::before,
+.before-after-quote::after {
+    background: #ccc;
+    border-radius: 50%;
+    color: #666;
+    font-weight: bold;
+    height: 1.5em;
+    line-height: 1.5;
+    position: absolute;
+    text-align: center;
+    width: 1.5em;
+}
+
+.before-after-quote::before {
+    content: "\201C";
+    left: 0;
+    top: 0;
+}
+
+.before-after-quote::after {
+    bottom: 0;
+    content: "\201D";
+    right: 0;
+}
+
+.before-after-number .item {
+    background: #6cf;
+    color: #fff;
+    counter-increment: number;
+    font-family: sans-serif;
+    margin: .5em;
+    padding: .5em;
+}
+
+.before-after-number .item::before {
+    content: counter(number);
+    color: #33f;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 1em 0 0;
+    max-width: 2em;
+    min-width: 1em;
+    text-align: right;
+}
+
+.before-after-number .item::after {
+    content: "(" attr(data-point) "pt)";
+    color: #efefef;
+    font-size: .7em;
+    margin: 0 0 0 .5em;
+}
+
+.before-after-overlap {
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+}
+
+.before-after-overlap::before,
+.before-after-overlap::after {
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    z-index: -1;
+}
+
+.before-after-overlap::before {
+    background: #ff0;
+    -webkit-transform: rotate(10deg);
+}
+
+.before-after-overlap::after {
+    background: #0f3;
+    -webkit-transform: rotate(-10deg);
+}
+
+
+.before-after-overlap-example {
+    box-sizing: border-box;
+    color: #fff;
+    font-family: sans-serif;
+    padding: .3em;
+    position: relative;
+    text-shadow: 1px 1px #ccc;
+}
+
+.before-after-overlap-example::before,
+.before-after-overlap-example::after {
+    box-sizing: border-box;
+    display: block;
+    height: 100px;
+    padding: .3em;
+    position: absolute;
+    text-shadow: 1px 1px #ccc;
+    width: 100px;
+}
+
+.before-after-overlap-example::before {
+    background: rgba(255,255,0,.5);
+    content: 'Before';
+    left: 20%;
+    top: 25%;
+}
+
+.before-after-overlap-example::after {
+    background: rgba(0,255,51,.5);
+    content: 'After';
+    left: 40%;
+    top: 50%;
+}
+
+/* Web font */
+.webfont-basic {
+    color: #9f3;
+    font-size: 4em;
+}
+
+.font-text-me-one {
+    font-family: 'Text Me One', sans-serif;
+}
+
+.font-kaushan-script {
+    font-family: kaushan-script, cursive;
+}
+
+.font-aclonica {
+    font-family: aclonica, serif;
+}
+
+.font-fontelico {
+    font-family: 'fontelico', sans-serif;
+}

@@ -1,0 +1,20 @@
+extends ../includes/base
+
+block append css
+
+block content
+	<p class="showDialog">ダイアログを表示</p>
+	<div class="dialog-cover"></div>
+	<div class="dialog-frame">
+	<div class="dialog">
+	<p class="dialog-title">本当に削除しますか？</p>
+	<p class="dialog-message">一度消すと、もとに戻すことができません。</p>
+	<ul class="dialog-actions">
+	<p class="dialog-actions-item"><button class="button-delete button">削除する</button></p>
+	<p class="dialog-actions-item"><button class="button-cancel button">キャンセル</button></p>
+	</div>
+	</div>
+	</div>
+
+block append scripts
+	script(src="/js/examples/dialog.js")

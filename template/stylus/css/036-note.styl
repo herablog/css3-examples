@@ -1,0 +1,104 @@
+@import 'includes/examples'
+
+/* normalize */
+mark {
+    background-color: transparent;
+}
+
+/* note style */
+.note {
+    background-color: #ffc;
+    background-image:
+        linear-gradient(#efefef 1px, transparent 1px),
+        linear-gradient(#ffffe6, #ffc);
+    background-position: 0 -1px, 0;
+    background-size: 2em 2em, 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    font-size: 1em;
+    line-height: 2;
+    margin: 30px;
+    overflow: hidden;
+    padding: 0 2em;
+    position: relative;
+    z-index: -10;
+}
+
+/* paragraph style */
+.note .paragraph {
+    margin: 2em 0;
+    transform: rotate(-.01deg);
+}
+
+/* mark1 full yellow */
+.mark1 {
+    background-color: #ff3;
+    position: relative;
+}
+
+.mark1::before,
+.mark1::after {
+    background-color: #ff3;
+    content: '';
+    height: 1.1em;
+    position: absolute;
+    transform: skew(10deg);
+    width: 1em;
+    z-index: -1;
+}
+
+.mark1::before {
+    left: -.2em;
+    top: 0;
+}
+
+.mark1::after {
+    right: -.2em;
+    bottom: 0;
+}
+
+
+/* mark2 thin yellow */
+.mark2 {
+    background-image:
+       linear-gradient(transparent 31%, #ff3 31%, #ff3 61%, transparent 61%);
+}
+
+/* mark3 thin orange */
+.mark3 {
+    background-image:
+       linear-gradient(transparent 31%, #fc6 31%, #fc6 61%, transparent 61%);
+}
+
+/* mark4 double line orange */
+.mark4 {
+    border-bottom: 2px solid #f90;
+    border-top: 2px solid #f90;
+}
+
+/* mark5 full pink */
+.mark5 {
+    background-color: #f9c;
+    position: relative;
+}
+
+.mark5::before,
+.mark5::after {
+    background-color: #f9c;
+    content: '';
+    height: 1.1em;
+    position: absolute;
+    transform: skew(10deg);
+    width: 1em;
+    z-index: -1;
+}
+
+.mark5::before {
+    left: -.2em;
+    top: 0;
+}
+
+.mark5::after {
+    right: -.2em;
+    bottom: 0;
+}
+

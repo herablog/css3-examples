@@ -1,0 +1,164 @@
+@import 'includes/examples'
+
+.line
+    margin 20px 0
+
+
+/* line gradient */
+.line1
+    border 0
+    background-color #09f
+    background-image linear-gradient(left, #fff, #09f, #fff)
+    height 2px
+
+
+/* line double */
+.line2
+    background #09f
+    border 0
+    height 2px
+
+
+.line2:before
+    background #09f
+    content ''
+    display block
+    height 1px
+    position relative
+    top -2px
+    width 100%
+
+
+/* line triple */
+.line3
+    background #09f
+    border 0
+    height 1px
+    position relative
+
+
+.line3:before,
+.line3:after
+    background #09f
+    content ''
+    display block
+    height 1px
+    position absolute
+    width 100%
+
+
+.line3:before
+    top -2px
+
+
+.line3:after
+    top 2px
+
+
+/* line heart */
+.line4
+    border none
+    height 1em
+
+.line4:before
+    color #f69
+    content '\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004\f004'
+    display block
+    font-family 'FontAwesome'
+    letter-spacing .15em
+    text-align center
+    width 100%
+
+
+/* line diamond */
+.line5
+    border none
+    height 1em
+
+.line5:before
+    color #090
+    content '\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da\f0da'
+    display block
+    font-family 'FontAwesome'
+    letter-spacing .15em
+    text-align center
+    width 100%
+
+
+/* line star */
+.line6
+    border none
+    height 1em
+
+.line6:before
+    color #fc3
+    content '\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005'
+    display block
+    font-family 'FontAwesome'
+    text-align center
+    width 100%
+
+
+/* line star gradient */
+.line7
+    border none
+    height 1em
+
+.line7:before
+    background-image linear-gradient(left, #33f, #f03)
+    color #fc3
+    content '\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005'
+    display block
+    font-family 'FontAwesome'
+    text-align center
+    width 100%
+    text-fill-color(transparent)
+    background-clip text
+    text-shadow inset 1px 1px 2px black
+
+
+/* line star shadow */
+.line8
+    border none
+    height 1em
+
+
+.line8:before
+    color #fff
+    content '\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005'
+    font-family 'FontAwesome'
+    position absolute
+    text-align center
+    text-shadow 1px 1px 3px rgba(0,0,0,.2)
+    width 100%
+
+
+.line8:after
+    background-clip text
+    background-image linear-gradient(#fc3, #f90)
+    color #fc3
+    content '\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005\f005'
+    font-family 'FontAwesome'
+    position absolute
+    text-align center
+    text-fill-color(transparent)
+    width 100%
+
+
+
+/* line cut */
+.line9
+    border 0
+    border-top 1px dashed #000
+    text-align center
+
+
+.line9:after
+    background #fff
+    content 'キリトリ線'
+    display inline-block
+    padding 0 .5em
+    position relative
+    top -.7em
+
+

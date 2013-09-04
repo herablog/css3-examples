@@ -1,0 +1,30 @@
+extends ../includes/base
+
+block append css
+
+block content
+	<form action="#" method="GET">
+	<button class="button-default button">Let's Go</button>
+	<input type="button" class="button-default button" value="Let's Go">
+
+	<!-- Reset button -->
+	<div>
+	<button type="reset" class="button">Reset</button>
+	<input type="reset" class="button" value="Reset">
+	</div>
+
+	<!-- Submit button -->
+	<div>
+	<button type="submit" class="button">Submit</button>
+	<input type="submit" class="button" value="Submit">
+	</div>
+
+	<!-- Disabled button -->
+	<div>
+	<button class="button" disabled>Disabled</button>
+	<input type="button" class="button" value="Disabled" disabled>
+	</div>
+	</form>
+
+block append scripts
+

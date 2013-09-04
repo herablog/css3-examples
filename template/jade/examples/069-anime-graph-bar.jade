@@ -1,0 +1,17 @@
+extends ../includes/base
+
+block append css
+
+block content
+	<figure class="graph">
+	<figcaption class="graph-caption">都市的集積地域の推定人口と面積（Géopolis, 2005年人口上位25位）</figcaption>
+	<ul class="bar-graph">
+	<li class="bar-graph-item"><p class="bar-graph-name">NY</p><p class="bar-graph-value">27,860,000</p></li>
+	<li class="bar-graph-item"><p class="bar-graph-name">Tokyo</p><p class="bar-graph-value">31,112,000</p></li>
+	<li class="bar-graph-item"><p class="bar-graph-name">Séoul</p><p class="bar-graph-value">22,447,000</p></li>
+	<li class="bar-graph-item"><p class="bar-graph-name">Shanghai</p><p class="bar-graph-value">14,345,000</p></li>
+	</ul>
+	</figure>
+
+block append scripts
+	script(src="/js/examples/anime-graph-bar.js")

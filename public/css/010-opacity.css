@@ -1,0 +1,22 @@
+#main {
+  font-family: sans-serif;
+}
+/* opacity */
+.photo-list {
+  display: -webkit-box;
+}
+.photo-item {
+  -webkit-box-flex: 1;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -webkit-transition: opacity 0.2s;
+}
+.photo-item:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.photo-item img {
+  width: 100%;
+}

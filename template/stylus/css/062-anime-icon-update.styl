@@ -1,0 +1,37 @@
+@import 'includes/examples'
+
+#main {
+    padding: 50px;
+}
+
+/* new icon */
+.icon-update {
+    color: #30f;
+    display: inline-block;
+    font-family: aclonica, sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-shadow:
+        1px 1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,-1px -1px 0 #fff;
+}
+
+.icon-update::before {
+    animation: appear 2s ease-out infinite;
+    background: #fff;
+    content: '';
+    display: inline-block;
+    height: 1.2em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+/* animations */
+@keyframes appear {
+    from { transform: translate(0); }
+    to { transform: translate(15em, 0); }
+}
+

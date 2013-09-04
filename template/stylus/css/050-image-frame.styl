@@ -1,0 +1,33 @@
+@import 'includes/examples'
+
+p {
+    margin: 10px;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+
+.frame {
+    border: 5px solid #efefef;
+    width: 300px;
+}
+
+.frame1 {
+    box-shadow: 0 10px 8px -6px #8d8c8c;
+     box-shadow: 0 10px 8px -6px #8d8c8c;
+}
+
+.frame2 {
+    position: relative;
+}
+.frame2::after {
+    content: "";
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5), inset 0 0 100px rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

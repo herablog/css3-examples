@@ -1,0 +1,81 @@
+@import 'includes/examples'
+
+/* common styles */
+.graph {
+    margin: 30px;
+    font-family: sans-serif;
+}
+
+.graph-caption {
+    color: #333;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+/* bar */
+.bar-graph-item {
+    flexbox()
+}
+
+/* name */
+.bar-graph-name {
+    background: #fff;
+    box-sizing: border-box;
+    color: #999;
+    font-size: .8em;
+    line-height: 2.3;
+    margin: 1em .5em 1em 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 3.5em;
+}
+
+/* value */
+.bar-graph-value {
+    box-sizing: border-box;
+    color: #000;
+    font-size: .8em;
+    margin: 1em 0;
+    padding: .5em;
+    text-align: center;
+    transition: all 1s;
+}
+
+.bar-graph-item:nth-child(1) .bar-graph-value {
+    background: #ff3;
+    width: 0;
+}
+
+.bar-graph-item:nth-child(1) .bar-graph-value.action {
+    width: 80%;
+}
+
+.bar-graph-item:nth-child(2n) .bar-graph-value {
+    background: #3cf;
+    width: 0;
+}
+
+.bar-graph-item:nth-child(2) .bar-graph-value.action {
+    width: 89%;
+}
+
+.bar-graph-item:nth-child(3n) .bar-graph-value {
+    background: #3f6;
+    width: 0;
+}
+
+.bar-graph-item:nth-child(3) .bar-graph-value.action {
+    width: 64%;
+}
+
+.bar-graph-item:nth-child(4n) .bar-graph-value {
+    background: #f93;
+    width: 0;
+}
+
+.bar-graph-item:nth-child(4) .bar-graph-value.action {
+    width: 41%;
+}
+
